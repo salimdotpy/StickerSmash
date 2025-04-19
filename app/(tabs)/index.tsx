@@ -28,10 +28,15 @@ export default function Index() {
       <View style={styles.imageContainer}>
       <ImageViewer imgSource={PlaceholderImage} selectedImage={selectedImage} />
       </View>
+      { showAppOptions ? (
+        <View />
+      ) :
+      (
       <View style={styles.footerContainer}>
         <Button label="Choose a photo" theme="primary" onPress={pickImageAsync} />
         <Button label="Use this photo" />
       </View>
+      )}
     </View>
   );
 }
