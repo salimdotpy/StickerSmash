@@ -1,18 +1,18 @@
-import { View, StyleSheet } from "react-native";
-import ImageViewer from "../components/ImageViewer";
-import Button from "../components/Button";
+import { View, StyleSheet, Platform } from "react-native";
 import * as ImagePicker from 'expo-image-picker';
 import * as MediaLibrary from 'expo-media-library';
 import { useState, useRef } from "react";
 import { captureRef } from 'react-native-view-shot';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { type ImageSource } from 'expo-image';
 
+import ImageViewer from "../components/ImageViewer";
+import Button from "../components/Button";
 import IconButton from "../components/IconButton";
 import CircleButton from "../components/CircleButton";
 import EmojiPicker from "../components/EmojiPicker";
 import EmojiList from '../components/EmojiList';
 import EmojiSticker from '../components/EmojiSticker';
-import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 const PlaceholderImage = require('@/assets/images/background-image.png');
 
